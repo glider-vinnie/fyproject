@@ -1,5 +1,5 @@
 {
-  "name": "chat-app",
+  "name": "fyproject",
   "version": "1.0.0",
   "description": "A simple chat application built with React and styled-components.",
   "main": "index.js",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/chat-app.git"
+    "url": "git+https://github.com/glider-vinnie/fyproject.git"
   },
   "keywords": [
     "chat",
@@ -29,10 +29,10 @@
     "styled-components",
     "frontend"
   ],
-  "author": "Your Name",
+  "author": "glider-vinnie",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/your-username/chat-app/issues"
+    "url": "https://github.com/glider-vinnie//issues"
   },
-  "homepage": "https://github.com/your-username/chat-app#readme"
+  "homepage": "https://github.com/glider-vinnie/chat-app#readme"
 }
