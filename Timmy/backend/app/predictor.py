@@ -1,23 +1,12 @@
-from sklearn.linear_model import LinearRegression
-import numpy as np
+predictor = Predictor()
 
-class Predictor:
-    def __init__(self):
-        self.model = LinearRegression()
-        self.is_trained = False
-        
-    def train(self, X, y):
-        self.model.fit(X, y)
-        self.is_trained = True
-        
-    def predict(self, text):
-        # This is a simplified example. In a real application,
-        # you would need to extract meaningful features from the text
-        # and have proper training data
-        if not self.is_trained:
-            return None
-            
-        # Convert text to features (simplified)
-        features = np.array([[len(text)]])  # Using text length as a simple feature
-        
-        return float(self.model.predict(features)[0]) 
+# Sample training data (texts and corresponding labels)
+texts = ["I love coding", "Python is great", "I hate bugs", "Debugging is hard"]
+targets = [5.0, 4.8, 1.0, 2.0]
+
+# Train the model
+predictor.train(texts, targets)
+
+# Predict using a new input
+result = predictor.predict("I enjoy writing Python code")
+print("Prediction:", result)
