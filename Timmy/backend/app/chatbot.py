@@ -5,8 +5,7 @@ class ChatBot:
     def __init__(self):
         self.bot = ChatBot('MyBot')
         self.trainer = ChatterBotCorpusTrainer(self.bot)
-        
-        # Train the chatbot with English language corpus
+        #for training
         self.trainer.train("chatterbot.corpus.english")
     
     def get_response(self, message):
